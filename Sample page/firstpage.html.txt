@@ -1,0 +1,6 @@
+<html>
+<title>First page</title>
+<head>
+<h1>First sample page</h1>
+</head>
+</html>
