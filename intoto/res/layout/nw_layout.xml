@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="22dp"
-        android:ems="10"
-        android:inputType="textMultiLine" />
+    android:layout_height="match_parent"
+   
+    tools:ignore="HardcodedText,ExtraText" >
 
     <Button
         android:id="@+id/button2"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="40dip"
-        android:layout_alignBottom="@+id/editText3"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="22dp"
+        android:layout_below="@+id/editText3"
         android:text="Post" />
+ 
+       
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="250dip"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="77dp"
+        android:layout_toLeftOf="@+id/button2"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="20dp"
+        android:text="Click To Upload File" />
 
-    <ListView
-        android:id="@+id/listView1"
-        android:layout_width="match_parent"
-        android:layout_height="360dip"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true" >
-    </ListView>
-  
 </RelativeLayout>
